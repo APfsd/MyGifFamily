@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MGF</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    
+    </head>
+    <body>
+        <nav class="navbar is-fixed-top is-warning" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <div class="navbar-item">
+                    <strong class="test class-test" id="app-title"> MGF </strong>
+                    <h5>My Gifs Family</h5>
+                </div>
+
+             
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="control"><input id="search-gif-input" class="input" type="search" placeholder="Search" name="omni"></div>
+                    <div class="control"><button id="search-gif-btn" class="button is-primary search-gif-btn" type="submit">Add</button></div>
+                </div>
+            </div>
+        </nav>
+        <section class="section">
+            <div class="container">
+                <div class="tags">
+                    <span class="tag is-success is-large favorite-category">
+                        Trending
+                        <button class="delete is-small"></button>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div id="gifs-container" class="columns is-multiline is-mobile"></div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
