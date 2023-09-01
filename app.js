@@ -8,7 +8,7 @@ var displayedGifs =[];
 searchButton.click (function(event){
     var inputText = searchInput.val();
     $.getJSON({
-        url: "http://api.giphy.com/v1/gifs/search?q=" + inputText  + "&api_key=Jspd9p0ZDKLfqQlI3kAlVqk0iCEqDOCY",
+        url: "https://api.giphy.com/v1/gifs/search?q=" + inputText  + "&api_key=Jspd9p0ZDKLfqQlI3kAlVqk0iCEqDOCY",
         success: function (res){
             var gifsData = res.data;
             var gifsWithCategory = gifsData.map(function(gif){
