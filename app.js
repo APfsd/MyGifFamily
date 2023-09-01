@@ -74,7 +74,7 @@ $('body').on('click','.tag',function(event){
  });   
 
 $.getJSON({
-url: "http://api.giphy.com/v1/gifs/trending?api_key=Jspd9p0ZDKLfqQlI3kAlVqk0iCEqDOCY",
+url: "https://api.giphy.com/v1/gifs/trending?api_key=Jspd9p0ZDKLfqQlI3kAlVqk0iCEqDOCY",
 success: function(res){
     var gifsData = res.data;
     var gifsWithCategory = gifsData.map(function(gif){
